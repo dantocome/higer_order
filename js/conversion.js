@@ -20,7 +20,18 @@
 const appWord = (str) =>{
     const arr = str.split("");
     arr.reverse();
-    console.log(arr);
+    str = arr.join("");
+    console.log(str);
 
 }
-appWord("apple");
+console.log(appWord("apple"));
+
+// const caseBattle = (str)=>{
+//     const  arr = str.split("");
+//     arr.replace(/-/g, "");
+//     arr.charAt(0).toUpperCase();
+// }
+// caseBattle();
+
+// console.log("the-stealth-warrio");
+
