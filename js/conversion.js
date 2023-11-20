@@ -44,16 +44,22 @@ const squareOdd = (numbers)=>{
 }
 // console.log(squareOdd(numbers));
 
-function evenNumbers(arr){
-    let newArr= [];
-    for(let i=0;i<arr.length;i++){
-        let num = arr[i];
-        if(num%2==0){
-            newArr.push(num);
-        }
-    }
-    return newArr
-}
-console.log(evenNumbers(numbers));
+// function evenNumbers(arr){
+//     let newArr= [];
+//     for(let i=0;i<arr.length;i++){
+//         let num = arr[i];
+//         if(num%2==0){
+//             newArr.push(num);
+//         }
+//     }
+//     return newArr
+// }
+// console.log(evenNumbers(numbers));
+
+// this is the best lecturer
+const capitalised = (sentence)=>{
+    return sentence.split(" ").map((word)=> word.charAt(0).toUpperCase()+word.slice(1)).join(" ")
+} 
+console.log(capitalised("this is the best lecturer"));
 
 
