@@ -117,7 +117,11 @@ function diffArr(){
     }
     return newArr;
 }
-console.log(diffArr(arr));
+// console.log(diffArr(arr));
+
+const productBuyers = (customers)=>{
+    return customers.filter((customer)=> customer.totalProductsPurchased)
+}
 
 
 
