@@ -14,14 +14,14 @@ const doubleNumber = (numbers) => {
   return numbers.map((number) => number * 2);
 };
 
-console.log(doubleNumber(numbers));
-// square the odd numbers
+// console.log(doubleNumber(numbers));
 
+// square the odd numbers
 const squareOddNumbers = (numbers) => {
   return numbers.map((number) => (number % 2 !== 0 ? number ** 2 : number));
 };
 
-// console.log(squareOddNumbers(numbers));
+console.log(squareOddNumbers(numbers));
 
 const people = ["Jack", "Mike", "Doris", "Peter"];
 
@@ -29,7 +29,14 @@ const people = ["Jack", "Mike", "Doris", "Peter"];
 const userPosition = (arr)=>{
     arr.map((person,index,arr)=>console.log(person+":"+index+"=>"+arr))
 }
-userPosition(people)
+// userPosition(people)
+
+const Labourers = ["Jack", "Mike", "Doris", "Peter"];
+
+const getLabourers = (labours)=>{
+  labours.map((labour, index, arr)=> console.log(labour+":"+index+"=>"+arr));
+}
+getLabourers(Labourers);
 
 // capitalise the first character in a given string
 
@@ -38,7 +45,7 @@ const capitalizeFirstLetter = (sentence) => {
   return sentence.split(' ').map(word=>word.charAt(0).toUpperCase()+word.slice(1)).join(' ')
 
 }
-console.log(capitalizeFirstLetter(sentence));
+// console.log(capitalizeFirstLetter(sentence));
 
 const word = "this is me";
 // console.log(word.split(' '));
